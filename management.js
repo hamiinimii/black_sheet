@@ -1,11 +1,10 @@
-let answer_names = ["光るるる","つや","靴磨きハリー","塩那やきとり","川上草魚","赤井さしみ","間宇","翡翠","碓氷さつし","木太郎","わにわにぱにっく","水飴ウナギ","二心アマメ","佐武原みゆき"];
-let choice_names = Array.from(answer_names).sort();
-let inner_names = "<option value='--'>--</option>";
+// answer_names = ["光るるる","つや","靴磨きハリー","塩那やきとり","川上草魚","赤井さしみ","間宇","翡翠","碓氷さつし","木太郎","わにわにぱにっく","水飴ウナギ","二心アマメ","佐武原みゆき"];
+inner_names = "<option value='--'>--</option>";
 
 window.onload = function(){
-  prepareTable();
-  prepareSelects();
-  changeNames();
+  prepareTable(changeNames);
+  // prepareSelects();
+  // changeNames();
 }
 
 function changeNames(){
