@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+          crossorigin="anonymous"></script>
+  <script type="text/javascript" src="viewtimer.js"></script>
+  <script type="text/javascript" src="getsheet.js"></script>
+  <script type="text/javascript" src="prepare.js"></script>
+  <script type="text/javascript" src="management.js"></script>
+  </head>
+
+<body>
+  
+  <table border="1">
+  <tr>
+    <th>ブラックのPN</th>
+    <th>ブラック被害者</th>
+    <th>ブラック犯人</th>
+    <th>答え</th>
+  </tr>
+  <tr>
+    <td id="blacker">初いさとし</td><td id="whiter">碓氷さつし</td><td id="selection">
+      <!-- <select id="name" onchange="changeNames()">
+        <option value=""></option>
+        <option value="--">--</option>
+      </select> -->
+    </td><td id="rightwrong"></td>
+  </tr>
+  <tr><td id="blacker">非卒</td><td id="whiter">翡翠</td><td id="selection"></td><td id="rightwrong"></td></tr>
+  <tr><td id="blacker">番犬がおがお</td><td id="whiter">わにわにぱにっく</td><td id="selection"></td><td id="rightwrong"></td></tr>
+  <tr><td id="blacker">Simy a.k.a ISA</td><td id="whiter">赤井さしみ</td><td id="selection"></td><td id="rightwrong"></td></tr>
+  <tr><td id="blacker">革化麿き／＼'ﾉー</td><td id="whiter">靴磨きハリー</td><td id="selection"></td><td id="rightwrong"></td></tr>
+  <tr><td id="blacker">米めめめ</td><td id="whiter">光るるる</td><td id="selection"></td><td id="rightwrong"></td></tr>
+  <tr><td id="blacker">川草上魚</td><td id="whiter">川上草魚</td><td id="selection"></td><td id="rightwrong"></td></tr>
+  <tr><td id="blacker">霜ハラミユッケ</td><td id="whiter">佐武原みゆき</td><td id="selection"></td><td id="rightwrong"></td></tr>
+  <tr><td id="blacker">そうしき</td><td id="whiter">つや</td><td id="selection"></td><td id="rightwrong"></td></tr>
+  <tr><td id="blacker">塩化かりうむ</td><td id="whiter">塩那やきとり</td><td id="selection"></td><td id="rightwrong"></td></tr>
+  <tr><td id="blacker">nicockroach</td><td id="whiter">二心アマメ</td><td id="selection"></td><td id="rightwrong"></td></tr>
+  <tr><td id="blacker">キンタロー♂</td><td id="whiter">木太郎</td><td id="selection"></td><td id="rightwrong"></td></tr>
+  <tr><td id="blacker">アナゴキャンディー</td><td id="whiter">水飴ウナギ</td><td id="selection"></td><td id="rightwrong"></td></tr>
+  <tr><td id="blacker">関宇</td><td id="whiter">間宇</td><td id="selection"></td><td id="rightwrong"></td></tr>
+
+  <!-- <p>おなまえ：<input type="text" name="" value=""></p> -->
+  <p id="score"></p>
+  <p>
+    <input class="view_timer" data-start-date="2020/1/11 20:30" type="button" value="答え合わせ" onclick="checkAnswers()">
+  </p>
+  <p id="answerchecker"></p>
+
+  <p>
+    <input type="checkbox" id="1kai" checked="checked">「ブラック犯人」で、同じ人を2度以上選択しない
+  </p>
+  <div id="response" >
+    
+  </div>
+</body>
