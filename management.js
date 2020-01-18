@@ -1,5 +1,3 @@
-inner_names = "<option value='--'>--</option>";
-
 window.onload = function(){
   prepareTable(changeNames);
 }
@@ -53,7 +51,7 @@ function checkAnswers(){
                     $("td#rightwrong").eq(i).html("<b>× </b>"+answer_names[i]);
                 }
             });
-            $("p#score").html(point+"/14点 です！ （正答率 "+ Math.round(point*100/14) +"%）");
+            $("p#score").html(point+"/"+len+"点 です！ （正答率 "+ Math.round(point*100/len) +"%）");
         }, function(){
             $("p#answerchecker").text("※答え合わせは20:30からですよ！");
         }
