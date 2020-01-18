@@ -1,6 +1,7 @@
 var answer_names = [];
 var choice_names = [];
-var inner_names = "";
+var inner_names = "<option value='--'>--</option>";
+var len = 0;
 const endpoint = "https://script.google.com/macros/s/AKfycbwF8nFnH99gkt5E6ArAXW0sH9mzWYMaxQLRqdb43kISd5rZ7bsN/exec";
 
 function prepareSelects(){
@@ -28,6 +29,7 @@ function prepareTable(func){
         $("table#ans_table").append(filled_row);
         answer_names.push(names[3*i+2]);
         choice_names = Array.from(answer_names).sort();
+        len++;
       }
       
       prepareSelects();
